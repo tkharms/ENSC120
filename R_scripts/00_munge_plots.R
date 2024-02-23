@@ -44,14 +44,14 @@ write.csv(div, here("data", "ShannonH.csv"), row.names = FALSE)
 #############
 # basic plot
 rich.pl <- rich %>% ggplot(aes(x = SoilType, y = richness, groups = Replicate)) +
-                      geom_bar(aes(color = Replicate, fill = Replicate), position = position_dodge2(width = 0.9, preserve = "single"), stat = "identity")
-                      
+                      geom_bar(aes(color = Replicate), position = position_dodge2(width = 0.9, preserve = "single"), stat = "identity")
+
 ## What does fill do?
 ## What does color do?
 ## What does position do?
 
 # Now let's clean up the aesthetics
-rich.pl <- rich %>% ggplot(aes(x = SoilType, y = richness, groups = Replicate)) +
+rich.pl2 <- rich %>% ggplot(aes(x = SoilType, y = richness, groups = Replicate)) +
                       geom_bar(aes(color = Replicate, fill = Replicate), position = position_dodge2(width = 0.9, preserve = "single"), stat = "identity") +
                       ylab("# species") +
                       theme_bw() +
@@ -64,7 +64,7 @@ rich.pl <- rich %>% ggplot(aes(x = SoilType, y = richness, groups = Replicate)) 
                             axis.text = element_text(size = 20),
                             axis.title = element_text(size = 20, margin = margin(t = 0, r = 11, b = 0, l = 0)))
                             
-ggsave(rich.pl, path = "plots", file = "spprichness.pdf", width = 12.5, height = 9.5, units = "in")
+ggsave(rich.pl2, path = "plots", file = "spprichness.pdf", width = 12.5, height = 9.5, units = "in")
 
 ## Plot evenness
 
