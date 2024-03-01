@@ -34,7 +34,7 @@ teamn.pl <- sdat %>% ggplot(aes(x = Site, y = STeaLoss_mean, groups = Tea)) +
                      ylim(0, 75) +
                      theme(axis.title.x = element_blank(),
                         axis.text = element_text(size = 18),
-                        axis.title.y = element_text(size = 20),
+                        #axis.title.y = element_text(size = 20),
                         panel.grid = element_blank(),
                         legend.title = element_text(size = 16),
                         legend.title.align = 0.5,
