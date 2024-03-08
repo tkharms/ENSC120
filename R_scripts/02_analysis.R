@@ -67,7 +67,7 @@ qqnorm(resid(mod1))
 qqline(resid(mod1))
 
 # Homogeneity of variances
-plot(resid(mod1))
+plot(mod1)
 
 ## Results
 summary(mod1)
