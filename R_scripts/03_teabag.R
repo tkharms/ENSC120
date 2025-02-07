@@ -12,6 +12,7 @@ dat <- read.csv(here("data", "ENSC120_teadecompEX.csv"))
 ### Incubation time ###
 #######################
 ## Format dates
+# Dates in input data file as 1-digit month, 2-digit day, 2-digit year
 dat <- dat %>% mutate(across(contains("Date"), \(x) as.Date(x,  format = "%m/%d/%y")))
 
 ## Calculate duration of incubation in days

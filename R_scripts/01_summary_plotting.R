@@ -27,7 +27,7 @@ sdat <- dat %>% group_by(Site, Lit, Tea) %>%
 #############
 ### Mean decomp rate w/ SD
 teamn.pl <- sdat %>% ggplot(aes(x = Site, y = STeaLoss_mean, groups = Tea)) +
-                     geom_pointrange(aes(ymin = STeaLoss_mean - STeaLoss_sd, ymax = STeaLoss_mean + STeaLoss_sd, color = Tea), position = position_jitter(width = 0.15), fatten = 10, size = 0.5) +
+                     geom_pointrange(aes(ymin = STeaLoss_mean - STeaLoss_sd, ymax = STeaLoss_mean + STeaLoss_sd, color = Tea), position = position_jitter(width = 0.15), fatten = 10, size = 0.15) +
                      ylab("% mass loss in 90 d") +
                      scale_color_manual("tea type", values=c("darkgreen", "darkred")) +
                      theme_bw() +
