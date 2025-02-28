@@ -106,4 +106,4 @@ summary(mod2)
 #################
 ## 1) Is there a difference in decomposition rate between the two types of leaf litter incubated at each site?
 
-## 2) Is there evidence for a relationship between leaf litter decomposition and temperature.
+## 2) Is there evidence for a relationship between leaf litter decomposition and temperature?
