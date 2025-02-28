@@ -12,6 +12,14 @@ library(coin)
 ### Decomposition data
 dat <- read.csv(here("data", "BradfordVeenLitDecompDATA.csv"))
 
+##########################
+### Data visualization ###
+##########################
+dat %>% ggplot(aes(x = Site, y = STeaLoss, fill = Tea)) +
+          geom_boxplot(outlier.shape = NA) +
+          geom_point(position = position_jitterdodge())
+          
+
 ####################
 ### Data summary ###
 ####################
@@ -20,6 +28,11 @@ sdat <- dat %>% group_by(Site, Lit, Tea) %>%
   summarize(across(Temp1:LitFinCN, list(n = ~sum(!is.na(.)),
                                         mean = ~mean(., na.rm = TRUE),
                                         sd = ~sd(., na.rm = TRUE))))
+
+## Visualize summarized data
+sdat %>% ggplot(aes(x = Tea, y = STeaLoss_mean)) +
+  geom_point(aes(color = Site), size = 3) +
+  geom_line(aes(group = Site, color = Site))
 
 #########################
 ### Statistical tests ###
@@ -53,9 +66,6 @@ t.test(ptdat$Red_mean, ptdat$Green_mean, paired = TRUE, alternative = "two.sided
 coin::wilcoxsign_test(ptdat$Red_mean ~ ptdat$Green_mean, distribution="exact")
 
 ### ANOVA: Compare means across two or more groups ###
-# Visualize the data first
-site.pl <- dat %>% ggplot(aes(x = Site, y = STeaLoss, fill = Tea)) +
-                   geom_boxplot()
 
 # Note that the model below is too simple for the paired design of the Bradford dataset. Code is provided for example purposes only.
 
