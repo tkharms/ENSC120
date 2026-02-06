@@ -1,0 +1,41 @@
+Tea Type,Idenitifaction Number ,Treatment,Weight_Start,Weight _Final
+Tea green ,Site_1_GTN,Tree_Near,2.28,1.39
+Tea green ,Site_1_GTF,Tree_Far,2.62,2.1
+Tea green ,Site_2_GTN,Tree_Near,2.25,1.27
+Tea green ,Site_2_GTF,Tree_Far,2.29,1.84
+Tea green ,Site_3_GTN,Tree_Near,2.07,1.27
+Tea green ,Site_3_ GTF,Tree_Far,2.28,1.87
+Tea green ,Site_4 GTN,Tree_Near,2.21,1.22
+Tea green ,Site_4_GTF,Tree_Far,2.12,
+Tea green ,Site_5_GTN,Tree_Near,2.22,1.24
+Tea green ,Site_5_GTF,Tree_Far,2.19,1.6
+Tea green ,Site_1_GSN,Shrub_Near,2.22,1.34
+Tea green ,Site_1_GSF,Shrub_Far,2.2,1.33
+Tea green ,Site_2_GSN,Shrub_Near,2.23,1.67
+Tea green ,Site_2_GSF,Shrub_Far,2.24,1.49
+Tea green ,Site_3_GSN,Shrub_Near,2.18,1.37
+Tea green ,Site_3_GSF,Shrub_Far,2.14,1.44
+Tea green ,Site_4_GSN,Shrub_Near,2.25,1.61
+Tea green ,Site_4_GSF,Shrub_Far,2.18,1.48
+Tea green ,Site_5_GSN,Shrub_Near,2.22,
+Tea green ,Site_5_GSF,Shrub_Far,2.31,1.52
+Tea rooibos*,Site_6_RTN,Tree_Near,2.16,2.04
+Tea rooibos,Site_6_RTF,Tree_Far,2.21,2.17
+Tea rooibos,Site_7 _RTN,Tree_Near,2.36,2.22
+Tea rooibos,Site_7_RTF,Tree_Far,2.39,1.93
+Tea rooibos,Site_8_RTN,Tree_Near,2.28,2.32
+Tea rooibos,Site_8_RTF,Tree_Far,2.41,2.13
+Tea rooibos,Site_9_RTN,Tree_Near,2.41,2.46
+Tea rooibos,Site_9_RTF,Tree_Far,2.3,2.08
+Tea rooibos,Site_10_RTN,Tree_Near,2.38,2.25
+Tea rooibos,Site_10_ RTF,Tree_Far,2.4,
+Tea rooibos,Site_6_RSN,Shrub_Near,2.39,1.98
+Tea rooibos,Site_6_RSF,Shrub_Far,2.37,
+Tea rooibos,Site_7_RSN,Shrub_Near,2.38,2.05
+Tea rooibos,Site_7_RSF,Shrub_Far,2.41,1.95
+Tea rooibos,Site_8_RSN,Shrub_Near,2.35,2.08
+Tea rooibos,Site_8_RSF,Shrub_Far,2.38,2.04
+Tea rooibos,Site_9_RSN,Shrub_Near,2.35,2
+Tea rooibos,Site_9_RSF,Shrub_Far,2.38,2.12
+Tea rooibos,Site_10_RSN,Shrub_Near,2.37,2.14
+Tea rooibos,Site_10_RSF,Shrub_Far,2.33,1.97

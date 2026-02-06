@@ -81,6 +81,7 @@ plot(mod1)
 
 ## Results
 summary(mod1)
+
 anova(mod1)
 
 ## Tukey's post-hoc test to determine which groups differ
